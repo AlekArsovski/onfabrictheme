@@ -1446,8 +1446,8 @@ table.pagenav,table.pagenav tr,table.pagenav td {
 	background-size: 50px;
 }
 
-#fabric_content .profile_button {
-	float: right;
+#fabric_content .profile_button,
+#fabric_content .profile_back {
 	display: block;
 	text-align: right;
 	vertical-align: middle;
@@ -1456,10 +1456,22 @@ table.pagenav,table.pagenav tr,table.pagenav td {
 	color: #FFF;
 	font-size: 18pt;
 	font-style: italic;
-	padding: 0 40px 0 10px;
-	background: url(../images/buttton_triangleNext.png) no-repeat;
-	background-position: right;
 	background-color: #Ac69Bd;
+	background-repeat: no-repeat;
+}
+
+#fabric_content .profile_button {
+	float: right;
+	padding: 0 40px 0 10px;
+	background-image: url(../images/buttton_triangleNext.png);
+	background-position: right;
+}
+
+#fabric_content .profile_back {
+	float: left;
+	padding: 0 10px 0 40px;
+	background-image: url(../images/buttton_trianglePrevious.png);
+	background-position: left;
 }
 
 #fabric_content .startButton{
